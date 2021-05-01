@@ -25,5 +25,5 @@ class TinkoffparserPipeline:
             collection.update_one({'ticker': item['ticker']},
                                   {"$unset": {'symbol': ''}})
             collection.update_one({'ticker': item['ticker']}, {"$set": {'symbol': item['symbol'], 'time': item['time']}})
-            print(f"UPDATE: {item['stocks_name']} :: {item['ticker']} :: {item['type']}")
+            # print(f"UPDATE: {item['stocks_name']} :: {item['ticker']} :: {item['type']}")
         return item

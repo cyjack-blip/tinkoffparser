@@ -12,7 +12,7 @@ BOT_NAME = 'tinkoffparser'
 SPIDER_MODULES = ['tinkoffparser.tinkoffparser.spiders']
 NEWSPIDER_MODULE = 'tinkoffparser.tinkoffparser.spiders'
 
-LOG_ENABLED = True
+LOG_ENABLED = False
 LOG_LEVEL = 'INFO'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent

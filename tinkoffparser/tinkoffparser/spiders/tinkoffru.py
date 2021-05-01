@@ -58,7 +58,7 @@ class TinkoffruSpider(scrapy.Spider):
         print(f'total: {len(self.parced_items)} items')
 
     def parse(self, response: HtmlResponse):
-        print(response.url)
+        # print(response.url)
         yield response.follow(
             'https://www.tinkoff.ru/api/common/v1/session?origin=web%2Cib5%2Cplatform',
             # callback=self.response_sid,
